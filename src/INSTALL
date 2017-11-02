@@ -1,0 +1,9 @@
+Building CRUR
+
+See doc/readme-qt.rst for instructions on building CRUR QT,
+the intended-for-end-users, nice-graphical-interface, reference
+implementation of CRUR.
+
+See doc/build-*.txt for instructions on building CRURd,
+the intended-for-services, no-graphical-interface, reference
+implementation of CRUR.
