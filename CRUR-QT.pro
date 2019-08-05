@@ -1,7 +1,9 @@
 TEMPLATE = app
 TARGET = CRUR-qt
-VERSION = 1.2.0
-INCLUDEPATH += src src/json src/qt
+VERSION = 1.2.2
+INCLUDEPATH += src src/json src/qt C:/deps/db-4.8.30.NC/build_unix/ C:/deps/boost_1_57_0/ C:/deps/
+QT += core gui network widgets
+
 DEFINES += QT_GUI BOOST_THREAD_USE_LIB BOOST_SPIRIT_THREADSAFE
 DEFINES += ENABLE_TRADE_REQUIRE_QT5
 DEFINES += STATIC
@@ -10,7 +12,7 @@ CONFIG += no_include_pwd
 CONFIG += thread
 CONFIG += static
 QMAKE_CXXFLAGS = -fpermissive
-QT += core gui network widgets
+
 #ifdef ENABLE_TRADE_REQUIRE_QT5
 CONFIG += openssl-linked
 CONFIG += openssl
@@ -33,17 +35,17 @@ greaterThan(QT_MAJOR_VERSION, 4) {
 #    BOOST_INCLUDE_PATH, BOOST_LIB_PATH, BDB_INCLUDE_PATH,
 #    BDB_LIB_PATH, OPENSSL_INCLUDE_PATH and OPENSSL_LIB_PATH respectively
 
-BOOST_LIB_SUFFIX=-mgw49-mt-s-1_55
-BOOST_INCLUDE_PATH=C:/deps/boost_1_55_0
-BOOST_LIB_PATH=C:/deps/boost_1_55_0/stage/lib
+BOOST_LIB_SUFFIX=-mgw49-mt-s-1_57
+BOOST_INCLUDE_PATH=C:/deps/boost_1_57_0
+BOOST_LIB_PATH=C:/deps/boost_1_57_0/stage/lib
 BDB_INCLUDE_PATH=C:/deps/db-4.8.30.NC/build_unix
 BDB_LIB_PATH=C:/deps/db-4.8.30.NC/build_unix
-OPENSSL_INCLUDE_PATH=C:/deps/openssl-1.0.1p/include
-OPENSSL_LIB_PATH=C:/deps/openssl-1.0.1p
-MINIUPNPC_INCLUDE_PATH=C:/deps/
+OPENSSL_INCLUDE_PATH=C:/deps/openssl-1.0.2/include
+OPENSSL_LIB_PATH=C:/deps/openssl-1.0.2
+MINIUPNPC_INCLUDE_PATH=C:/deps/miniupnpc
 MINIUPNPC_LIB_PATH=C:/deps/miniupnpc
-LIBPNG_INCLUDE_PATH=C:/deps/libpng-1.6.14
-LIBPNG_LIB_PATH=C:/deps/libpng-1.6.14/.libs
+LIBPNG_INCLUDE_PATH=C:/deps/libpng-1.6.15
+LIBPNG_LIB_PATH=C:/deps/libpng-1.6.15/.libs
 QRENCODE_INCLUDE_PATH=C:/deps/qrencode-3.4.4
 QRENCODE_LIB_PATH=C:/deps/qrencode-3.4.4/.libs
 
@@ -53,9 +55,6 @@ UI_DIR = build
 
 # use: qmake "RELEASE=1"
 contains(RELEASE, 1) {
-    # Mac: compile for maximum compatibility (10.5, 32-bit)
-    macx:QMAKE_CXXFLAGS += -mmacosx-version-min=10.5 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.5.sdk
-
     !windows:!macx {
         # Linux: static link
         LIBS += -Wl,-Bstatic
