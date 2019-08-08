@@ -36,12 +36,12 @@ std::string LogFileName(const std::string& name, uint64_t number) {
 // (TableFileName to use "ldb" and SSTTableFileName to use "sst").
 std::string TableFileName(const std::string& name, uint64_t number) {
   assert(number > 0);
-  return MakeFileName(name, number, "sst");
+  return MakeFileName(name, number, "ldb");
 }
 
 std::string SSTTableFileName(const std::string& name, uint64_t number) {
   assert(number > 0);
-  return MakeFileName(name, number, "ldb");
+  return MakeFileName(name, number, "sst");
 }
 
 std::string DescriptorFileName(const std::string& dbname, uint64_t number) {
