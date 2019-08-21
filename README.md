@@ -1,3 +1,5 @@
+Update 21.08.2019: CRUR supply in over 5300000000 (5,3 Bn). More info https://github.com/bicypto/CRUR-Simplified-UI
+
 CRUR (CRUR)
 ===================
 Distributed under the MIT/X11 software license.
