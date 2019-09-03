@@ -16,7 +16,7 @@ I have tested this succesfully. See below top6 addresses after few thousands blo
 
 ![New UI](https://github.com/bicypto/CRUR-Simplified-UI/blob/master/new_crur_wallet.PNG)
 
-TOP6 after few thousands blocks:
+TOP6 wallets after few thousands blocks:
 --------------------------------
 
 1.	629do7rQdRaQXTnJaQDK6EGbwdTymkfMmL	4521714080.65867043
