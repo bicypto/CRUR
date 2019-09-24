@@ -32,7 +32,7 @@ TOP6 wallets after few thousands blocks:
 6.	6143ojKsyNAA1PTDGzQiTZoSA1PNPSTeg8	100345657.39048351
 
  
-TOP10 wallets at block 2146787:
+TOP10 wallets at block 2146787: (TOP100 please see file TOP100_block2146787.txt)
 --------------------------------
 1	67mZqJr4YUrMCcQ5xGCuhHhXSvqx97TaqB	198082878.54942369
 
