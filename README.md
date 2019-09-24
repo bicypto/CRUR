@@ -54,7 +54,7 @@ TOP10 wallets at block 2146787:
 
 10	5qw99YD82dZqT6mW2gh1GVxgn3C6uo5e7z	99979575.88530740
 
-![Distribution](https://github.com/bicypto/CRUR-Simplified-UI/blob/master/distribution.PNG)
+![Distribution](https://github.com/bicypto/CRUR-Simplified-UI/blob/master/Distribution.PNG)
 
 
 
